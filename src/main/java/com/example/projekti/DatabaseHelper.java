@@ -6,9 +6,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-//this class helps to create and manage the database
+
 
 /**
+ * this class helps to create and manage the database
  * source of this code is from youtube video https://www.youtube.com/watch?v=aQAIMY-HzL8
  */
 //source of this code is from youtube video https://www.youtube.com/watch?v=aQAIMY-HzL8
