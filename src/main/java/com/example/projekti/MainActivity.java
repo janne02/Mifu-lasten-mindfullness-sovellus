@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextAge;
     private Button buttonConfirm;
     private TextView textView;
-    //String prevStarted = "yes";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
