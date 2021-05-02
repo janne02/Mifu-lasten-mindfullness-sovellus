@@ -91,4 +91,30 @@ public class MeterActivity extends AppCompatActivity {
                 Intent(MeterActivity.this, ViewListContents.class);
         startActivity(tiedot);
     }
+
+
+    /**
+     * shows dropdownlist to choose from 2 alternatives which are Change user and Shut down app
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String text = parent.getItemAtPosition(position).toString();
+        if (text.equals("Vaihda käyttäjää")) {
+            Intent paavalikko = new Intent(MeterActivity.this, MainActivity.class);
+            startActivity(paavalikko);
+        } else if (text.equals("Sulje sovellus")) {
+            this.finishAffinity();
+        }
+    }
+
+
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
 }
